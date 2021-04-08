@@ -14,8 +14,6 @@ This is a solution to the [3-column preview card component challenge on Frontend
 - [Author](#author)
 - [Acknowledgments](#acknowledgments)
 
-**Note: Delete this note and update the table of contents based on what sections you keep.**
-
 ## Overview
 
 ### The challenge
@@ -31,8 +29,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [Add live site URL here](https://github.com/emjogale/3-column-preview-card)
 
 ### Built with
 
@@ -58,5 +55,5 @@ I'm still not 100% on the container and positioning rules. Sometimes it seems I'
 
 ## Author
 
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
+- Frontend Mentor - [@emjogale](https://www.frontendmentor.io/profile/emjogale)
+- Twitter - [@emmagale2635](https://www.twitter.com/emmagale2635)
