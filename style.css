@@ -18,7 +18,7 @@ button {
 
 h1 {
 	font-family: "Big Shoulders Display", cursive;
-	font-size: 2rem;
+	font-size: 2.2rem;
 	color: hsl(0, 0%, 95%);
 }
 
@@ -26,46 +26,7 @@ p {
 	font-family: "Lexend Deca", sans-serif;
 	color: hsla(0, 0%, 100%, 0.75);
 	padding: 10% 0;
-}
-
-/* card styles*/
-.card {
-	padding: 10%;
-}
-
-.sedan {
-	background-color: hsl(31, 77%, 52%);
-}
-.sedan button {
-	color: hsl(31, 77%, 52%);
-}
-
-.suv {
-	background-color: hsl(184, 100%, 22%);
-}
-.suv button {
-	color: hsl(184, 100%, 22%);
-}
-
-.luxury {
-	background-color: hsl(179, 100%, 13%);
-}
-.luxury button {
-	color: hsl(179, 100%, 13%);
-}
-
-button {
-	padding: 0.7rem 1rem;
-	border-radius: 50px;
-	margin-top: 10%;
-	border: none;
-}
-.attribution {
-	font-size: 11px;
-	text-align: center;
-}
-.attribution a {
-	color: hsl(228, 45%, 44%);
+	line-height: 2em;
 }
 
 /* Container styles */
@@ -74,4 +35,103 @@ button {
 	flex-direction: column;
 	width: 80%;
 	margin: 0 auto;
+	align-items: center;
+}
+
+.content {
+	display: flex;
+	flex-direction: column;
+}
+
+/* card styles*/
+.card {
+	padding: 10%;
+}
+
+/* general button styles */
+
+button {
+	padding: 0.7rem 1.2rem;
+	border-radius: 60px;
+	margin-top: 10%;
+	border: none;
+}
+
+button:hover {
+	cursor: pointer;
+}
+
+/* individual card styles */
+
+.sedan {
+	background-color: hsl(31, 77%, 52%);
+}
+.sedan button {
+	color: hsl(31, 77%, 52%);
+	border: 1px solid hsl(31, 77%, 52%);
+}
+.sedan button:hover {
+	color: hsla(0, 0%, 100%, 0.75);
+	background-color: hsl(31, 77%, 52%);
+	border: 1px solid hsla(0, 0%, 100%, 0.75);
+	transition: background-color 0.5s linear;
+}
+
+.suv {
+	background-color: hsl(184, 100%, 22%);
+}
+.suv button {
+	color: hsl(184, 100%, 22%);
+	border: 1px solid hsl(184, 100%, 22%);
+}
+.suv button:hover {
+	color: hsla(0, 0%, 100%, 0.75);
+	background-color: hsl(184, 100%, 22%);
+	border: 1px solid hsla(0, 0%, 100%, 0.75);
+	transition: background-color 0.5s linear;
+}
+
+.luxury {
+	background-color: hsl(179, 100%, 13%);
+}
+.luxury button {
+	color: hsl(179, 100%, 13%);
+	border: 1px solid hsl(179, 100%, 13%);
+}
+
+.luxury button:hover {
+	color: hsla(0, 0%, 100%, 0.75);
+	background-color: hsl(179, 100%, 13%);
+	border: 1px solid hsla(0, 0%, 100%, 0.75);
+	transition: background-color 0.5s linear;
+}
+
+.attribution {
+	font-size: 11px;
+	text-align: center;
+}
+.attribution a {
+	color: hsl(228, 45%, 44%);
+}
+
+/* desktop styles */
+@media only screen and (min-width: 1025px) {
+	.content {
+		flex-direction: row;
+		max-width: 960px;
+		max-height: 70%;
+		margin-top: 10%;
+		border-radius: 10px;
+	}
+	.card {
+		padding: 6%;
+	}
+	.card.sedan {
+		border-top-left-radius: 10px;
+		border-bottom-left-radius: 10px;
+	}
+	.card.luxury {
+		border-top-right-radius: 10px;
+		border-bottom-right-radius: 10px;
+	}
 }
