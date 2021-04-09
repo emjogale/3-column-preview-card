@@ -52,6 +52,7 @@ I'm still not 100% on the container and positioning rules. Sometimes it seems I'
 
 - [Example resource 1](https://developer.mozilla.org/en-US/docs/Web/CSS/line-height) - This helped me for the line height.
 - [Example resource 2](https://www.freecodecamp.org/news/use-svg-images-in-css-html/) - This is really interesting article about the various ways you can use svg images.
+- [Example resource 3](https://webdesign.tutsplus.com/articles/css-tips-for-better-color-and-contrast-accessibility--cms-34472) - This is an excellent article about how to easily improve the accessibility of colours. I found the bits about hsl colours particularly helpful.
 
 ## Author
 
