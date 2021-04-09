@@ -25,8 +25,8 @@ h1 {
 p {
 	font-family: "Lexend Deca", sans-serif;
 	color: hsla(0, 0%, 100%, 0.75);
-	padding: 10% 0;
-	line-height: 2em;
+	margin: 10% 0;
+	line-height: 1.6em;
 }
 
 /* Container styles */
@@ -48,21 +48,20 @@ p {
 	padding: 10%;
 }
 
-/* general button styles */
-
-button {
-	padding: 0.7rem 1.2rem;
-
-	margin-top: 10%;
-}
-
-a {
+.card a {
 	text-decoration: none;
-	padding: 0.7rem 1.4rem;
+	padding: 0.6rem 1.4rem;
 	border-radius: 60px;
 	background-color: hsla(0, 0%, 100%, 0.75);
 	border: none;
 	font-family: "Lexend Deca", sans-serif;
+	font-weight: bold;
+	display: inline-block;
+}
+
+.card img {
+	display: inline-block;
+	padding-bottom: 15%;
 }
 
 /* individual card styles */
@@ -71,7 +70,7 @@ a {
 	background-color: hsl(31, 77%, 52%);
 }
 .sedan a {
-	color: hsl(31, 77%, 52%);
+	color: hsl(31, 77%, 33%);
 	border: 1px solid hsl(31, 77%, 52%);
 }
 .sedan a:hover {
@@ -85,7 +84,7 @@ a {
 	background-color: hsl(184, 100%, 22%);
 }
 .suv a {
-	color: hsl(184, 100%, 22%);
+	color: hsl(184, 100%, 21%);
 	border: 1px solid hsl(184, 100%, 22%);
 }
 .suv a:hover {
@@ -129,6 +128,9 @@ a {
 	}
 	.card {
 		padding: 6%;
+	}
+	p {
+		padding-bottom: 20%;
 	}
 	.card.sedan {
 		border-top-left-radius: 10px;
