@@ -5,18 +5,24 @@
 	box-sizing: border-box;
 }
 
-/* Font styles  */
-
-html {
-	font-size: 15px;
+/* visually hidden */
+.sr-only {
+	position: absolute;
+	left: -10000px;
+	top: auto;
+	width: 1px;
+	height: 1px;
+	overflow: hidden;
 }
+
+/* General styles */
 
 body,
 button {
 	background-color: hsl(0, 0%, 95%);
 }
 
-h1 {
+h2 {
 	font-family: "Big Shoulders Display", cursive;
 	font-size: 2.5rem;
 	color: hsl(0, 0%, 95%);
@@ -24,6 +30,7 @@ h1 {
 
 p {
 	font-family: "Lexend Deca", sans-serif;
+	font-size: 0.9375rem;
 	color: hsla(0, 0%, 100%, 0.75);
 	margin: 10% 0;
 	line-height: 1.6em;
@@ -50,7 +57,7 @@ p {
 
 .card a {
 	text-decoration: none;
-	padding: 0.6rem 1.4rem;
+	padding: 0.9rem 2rem;
 	border-radius: 60px;
 	background-color: hsla(0, 0%, 100%, 0.75);
 	border: none;
@@ -121,6 +128,7 @@ p {
 @media only screen and (min-width: 1025px) {
 	.content {
 		flex-direction: row;
+		justify-content: center;
 		max-width: 960px;
 		max-height: 70%;
 		margin-top: 12%;
