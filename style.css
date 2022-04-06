@@ -15,6 +15,16 @@
 	overflow: hidden;
 }
 
+/* Container styles */
+.container {
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	padding: 5rem 1.5rem;
+	align-items: center;
+	justify-content: center;
+}
+
 /* General styles */
 
 body,
@@ -32,33 +42,27 @@ p {
 	font-family: "Lexend Deca", sans-serif;
 	font-size: 0.9375rem;
 	color: hsla(0, 0%, 100%, 0.75);
-	margin: 10% 0;
-	line-height: 1.6em;
-}
-
-/* Container styles */
-.container {
-	display: flex;
-	flex-direction: column;
-	width: 80%;
-	margin: 0 auto;
-	align-items: center;
+	margin: 1.5rem 0;
+	line-height: 1.6;
 }
 
 .content {
 	display: flex;
 	flex-direction: column;
+	border-radius: 0.625rem;
+	overflow: hidden;
+	background-color: hsl(31, 77%, 52%);
 }
 
 /* card styles*/
 .card {
-	padding: 10%;
+	padding: 3rem;
 }
 
 .card a {
 	text-decoration: none;
 	padding: 0.9rem 2rem;
-	border-radius: 60px;
+	border-radius: 3.75rem;
 	background-color: hsla(0, 0%, 100%, 0.75);
 	border: none;
 	font-family: "Lexend Deca", sans-serif;
@@ -68,14 +72,11 @@ p {
 
 .card img {
 	display: inline-block;
-	padding-bottom: 15%;
+	padding-bottom: 2.2rem;
 }
 
 /* individual card styles */
 
-.sedan {
-	background-color: hsl(31, 77%, 52%);
-}
 .sedan a {
 	color: hsl(31, 77%, 33%);
 	border: 1px solid hsl(31, 77%, 52%);
@@ -89,6 +90,7 @@ p {
 
 .suv {
 	background-color: hsl(184, 100%, 22%);
+	border-radius: 0.625rem;
 }
 .suv a {
 	color: hsl(184, 100%, 21%);
@@ -126,26 +128,15 @@ p {
 
 /* desktop styles */
 @media only screen and (min-width: 1025px) {
+	.container {
+		padding: 0;
+	}
 	.content {
 		flex-direction: row;
-		justify-content: center;
-		max-width: 960px;
-		max-height: 70%;
-		margin-top: 12%;
-		border-radius: 10px;
+		max-width: 920px;
 	}
-	.card {
-		padding: 6%;
-	}
+
 	p {
-		padding-bottom: 20%;
-	}
-	.card.sedan {
-		border-top-left-radius: 10px;
-		border-bottom-left-radius: 10px;
-	}
-	.card.luxury {
-		border-top-right-radius: 10px;
-		border-bottom-right-radius: 10px;
+		padding-bottom: 3.7rem;
 	}
 }
